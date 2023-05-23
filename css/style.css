@@ -43,28 +43,19 @@ header {
 }
 
 
-/**menu principal logo y barra navegadora*/
+/**menu principal logo y barra navegadora**/
 
 
 
-.redes {
-  display: flex;
-  text-align: left;
-  font-size: medium;
-  color: aquamarine;
-  background-color: rgb(134, 171, 111);
-  padding: 15px;
-  height: auto;
-  align-self: baseline;
-}
 
 .pie-pagina{
   justify-content:space-between;
   background-color: #e2d1d1;
   align-content: flex-end;
   
-
 }
+
+
 
 nav ul li a {
   background-color: transparent;
@@ -72,22 +63,21 @@ nav ul li a {
   padding: 15px;
   font-size: 1.7rem;
   text-decoration:solid;
-  font-family:monospace;
+  font-family:Arial, Helvetica, sans-serif;
   font-weight:bold;
   
 }
 
 
 
-/*
 nav ul li a:hover {
-  background-color: #c0b70c;
+  background-color: #b16a89;
   transition: 0.1s;
-  border: solid #edbfc6;
-  text-decoration:dotted;
+  border: 2px solid #373737;
+  text-decoration:solid;
   
 }
-*/
+
 .menu {
   display: flex;
   vertical-align: text-top;
@@ -96,16 +86,6 @@ nav ul li a:hover {
 
 /*index*/
 
-.redes {
-  padding: 15px;
-  margin: 16px;
-  background-color: #edbfc6;
-  color: #14150a;
-  text-align: justify;
-  align-items: baseline;
-  align-content: baseline;
-}
-
 .imagenes {
   display: flex;
   padding: 15px 15px 15px 15px;
@@ -113,7 +93,10 @@ nav ul li a:hover {
   margin: 15px;
   width: 15px;
 }
+
 /*contacto */
+
+
 .contacto {
   padding: 200px;
   margin: 300px;
@@ -125,19 +108,28 @@ nav ul li a:hover {
 
 footer {
   display: flex;
-  align-items:end;
+  align-items:flex-end;
   justify-content: space-between;
+  margin: 17px;
+  padding: 25px 9px 9px 9px;
+  width: 95%;
+  
 }
-/*
-p {
-  background-color: #edbfc6;
-  margin: 20%;
-  height: 100%;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  text-align: right;
+
+footer .icons{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 80%;
+
 }
-*/
+.copiright{
+  justify-content: flex-end;
+  margin-top: 35px;
+  padding-top: 35px;
+}
+
 /*titulo en cada una de las paginas*/
 
 .titulos {
@@ -152,9 +144,7 @@ p {
   text-decoration: 5px solid;
  
 }
-.div.col{
-  margin-top: 25px;
-}
+
 
 h1 {
   background-color: #edbfc6;
@@ -169,6 +159,7 @@ h1 {
 
 
 }
+
 img.logo {
   display: flex;
   height: fit-content;
@@ -178,6 +169,7 @@ img.logo {
   align-self: flex-start;
   border-radius: 25px;
 }
+
 .grilla {
   display: grid;
   padding: 15px;
@@ -192,6 +184,7 @@ img.logo {
     "area9 area10 area11 area12";
   justify-items: center;
 }
+
 .caja {
   width: 95%;
   height: 300px;
@@ -209,26 +202,40 @@ img.logo {
 justify-content: center;
 
 }
-.card-description {
- 
-overflow: hidden;
-}
 
+.card-description {
+
+ overflow: hidden;
+
+}
+/* estilo card boostrap*/
 .card-body{
-background-color: #5f5e5f ;
+background-color: #b5b5b5 ;
 color: #14150a;
 font-weight: bold;
 font-size: 1rem;
-}
 
+}
+.card-footer{
+  background-color:#b5b5b5;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: solid;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  gap: 15px;
+}
 .card-img-top{
   height: 27rem;
   object-fit: cover;
   
 }
+.col{
+  margin-bottom: 25px;
+}
 
-.card h-100{
+.card{
 gap: 15px;
+background-color: #b5b5b5;
 }
 
 
@@ -242,6 +249,41 @@ gap: 15px;
 .div.menu_nav{
   margin: 250px;
 }
+.videos{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 15px;
+  
+}
+/*carrousel index*/
+#carouselExample{
+  height: 700px;
+  width: 1100px;
+}
+
+.carousel-index{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  
+  
+}
+.carousel-item {
+  
+  height: 700px;
+  width: 1100px;
+  object-fit: cover;
+  
+}
+.carousel-item img{
+  
+  height: 700px;
+  width: 1100px;
+  object-fit: cover;
+  object-position: center;
+ }
+
 
 h2 {
   font-size: 25px;
@@ -252,6 +294,26 @@ h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.card-title{
+  color: #171414;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration:underline;
+}
+
+
+h3{
+  font-size: 20px ;
+  color: #2b0808;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight:200;
+  font-family:cursive;
+  margin: 15px;
+  padding: 15px;
+
+}
+
 .c1 {
   grid-area: area1;
   display: flex;
@@ -374,10 +436,19 @@ h2 {
   width: 30%;
 }
 
+.tamaño-iconos{
+  height: 19px;
+  width: 19px;
+  color: rgb(91, 44, 0);
+
+  }
+
+
+
 /*mediaqueris */
 
 
-@media (max-width: 320px) {
+@media (max-width:320px) {
 
 header{
   display: flex;
@@ -397,11 +468,24 @@ main{
   flex-direction: column;
   width: 100%;
 }
+.tamaño-iconos{
+  width: 15px;
+  height: 15px;
+  
+}
+.videos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 15px;
+  
+}
 
 footer{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 95%;
 
 }
 .grilla{
@@ -419,16 +503,30 @@ h1 {
 
 }
 .carousel-index{
-  display: flex;
+  height: 200px;
+  width: 200px;
   justify-content: center;
-  gap: 25px;
+  object-fit: cover;
+  margin-left: 10px;
+  align-items: center;
+  
   
 }
 .carousel-item {
   
-  height: 500px;
-  width: 100px;
-  object-fit: cover; }
+  height: 200px;
+  width: 200px;
+  margin-left: 10px;
+  
+}
+.carousel-item img{
+  
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+  position:relative;
+  margin-left: 15px;
+  }
 
 
 }
@@ -448,6 +546,13 @@ h1 {
      margin: 0;
      }
   
+  .tamaño-iconos{
+    width: 20px;
+    height: 20px;
+    
+  
+     }
+     
   main{
     display: flex;
     flex-direction: column;
@@ -483,16 +588,24 @@ h1 {
   }
 
   .carousel-index{
-    display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: center;   
+    gap: 5px;
+    
     
   }
   .carousel-item {
     
-    height: 500px;
-    width: 100px;
-    object-fit: cover; }
+    height: 300px;
+    width: 200px;
+    
+  }
+  .carousel-item img{
+    
+    height: 300px;
+    width: 200px;
+   
+   }
+  
 
 
 }
@@ -501,7 +614,27 @@ h1 {
 
 @media (max-width:600px) {
   
+
+  .carousel-index{
+    gap: 15px;
+    
+    
+  }
+  .carousel-item {
+    
+    height: 600px;
+    width: 250px;
+    object-fit: cover;
+    
+  }
+  .carousel-item img{
+    
+    height: 600px;
+    width: 250px;
+    object-fit: cover; }
   
+
+
   header{
     display: flex;
     flex-direction: column;
@@ -521,10 +654,19 @@ h1 {
     width: 100%;
   }
   
+  .tamaño-iconos{
+    width: 25px;
+    height: 25px;
+  
+  }
+  
   footer{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    flex-direction:column;
+    width: 80%;
+    margin: 20px;
+    padding: 34px;
+    justify-content: space-around;
   
   }
   .grilla{
@@ -588,8 +730,11 @@ header{
   
   footer{
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    align-items:flex-end;
+    justify-content: space-around;
+    margin: 25px;
+    padding: 15px;
+    width: 90%;
   
   }
   .grilla{
@@ -618,7 +763,8 @@ header{
   .carousel-index{
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 5px;
+  
   
 }
 .carousel-item {
@@ -626,28 +772,13 @@ header{
   height: 600px;
   width: 800px;
   object-fit: cover;
+  margin: 15px 15px 25px 15px;
+}
+.copiright{
+  text-align: right;
+  justify-content:right;
+  
 }
 }
 
 
-/*carrousel index*/
-
-
-.carousel-index{
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  
-}
-.carousel-item {
-  
-  height: 600px;
-  width: 800px;
-  object-fit: cover;
-  
-}
-.carousel-item img{
-  
-  height: 600px;
-  width: 800px;
-  object-fit: cover; }
